@@ -8,6 +8,17 @@ A predictive modeling project that estimates insurance premium costs based on he
 *Evaluation Metrics:
  * R² Score → To measure how well the model explains variance.
  * RMSE (Root Mean Squared Error) → To measure prediction error.
+# Model Final Scores
+  I trained multiple models to predict premium price.The model tested include :
+   - * Linear regreassion
+     * Random Forest Regressor
+     * XGBoost Regressor
+     * Gradient Boosting Regressor
+   Among all the models Random Forest gave the best performance . The final evaluation metrics for Random Forest model are:
+     * MAE - 4.477389e+06
+     * RMSE - 3491.69899
+     * R2 Score - 0.895002
+
 
 # Steps Taken
 
