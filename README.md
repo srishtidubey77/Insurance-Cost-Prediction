@@ -6,18 +6,33 @@ A predictive modeling project that estimates insurance premium costs based on he
 *Regression Problem → Target variable = Premium Amount
 
 *Evaluation Metrics:
+
  * R² Score → To measure how well the model explains variance.
  * RMSE (Root Mean Squared Error) → To measure prediction error.
+ * 
 # Model Final Scores
   I trained multiple models to predict premium price.The model tested include :
-   - * Linear regreassion
+  
+     * Linear regreassion
      * Random Forest Regressor
      * XGBoost Regressor
      * Gradient Boosting Regressor
+       
    Among all the models Random Forest gave the best performance . The final evaluation metrics for Random Forest model are:
-     * MAE - 4.477389e+06
-     * RMSE - 3491.69899
-     * R2 Score - 0.895002
+
+   Results:
+   
+     - Random Forest      → RMSE: 2116 | R²: 0.895  (Best performance)
+     - Gradient Boosting  → RMSE: 2374 | R²: 0.868
+     - XGBoost            → RMSE: 2654 | R²: 0.834
+     - Linear Regression  → RMSE: 3492 | R²: 0.714  (Weakest model)
+
+   Conclusion:
+   
+     Random Forest achieved the lowest error and highest R²,
+     explaining ~89.5% of the variance. 
+     => Final model selected: Random Forest Regressor
+
 
 
 # Steps Taken
